@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="css/contactos.css" rel="stylesheet">
+    <title>contacto</title>
+</head>
+<body>
+   
+            <form action="https://formsubmit.co/alumnoscontafray@gmail.com" method="POST">
+                <h3 class="titulo-seccion">CONTACTO</h3>
+                <div class="contenedor-form">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Nombre Completo *" >
+                   <label for="email">Email</label>
+                    <input type="email"  id="email" placeholder="Dirección de Email">
+                    <label for="tema">Tema</label>
+                    <input type="text" placeholder="Tema..." id="tema">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        ></textarea>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+
+        
+</body>
+</html>

@@ -16,6 +16,7 @@
         <link href="css/contacto.css" rel="stylesheet">
         <link href="css/institucional.css" rel="stylesheet">
         <link href="css/footer.css" rel="stylesheet">
+        <link href="css/contactos.css" rel="stylesheet">
         
     </head>
     <body>
@@ -24,7 +25,7 @@
             <img class="head__logo" src="img/logouno.ico" alt="Logo Inicial">
             <nav class="head__navegacion">
                 <ul>
-                    <li class="head__enlace"><a href="#sobre_nosotros container">Sobre nosotros</a></li>
+                    <li class="head__enlace"><a href="">Sobre nosotros</a></li>
                     <li class="head__enlace"><a href="#">Productos</a></li>
                     <li class="head__enlace"><a href="#">Contacto</a></li>
                 </ul>
@@ -130,11 +131,29 @@
                     </li>
                 </ul> -->
             </section>
-            <section class="contacto container">
+           <!-- <section class="contacto container">
                 <h2 class="contacto__titulo">Contacto</h2>
                 <p>Entre en contacto con nosotros</p>
-                <a href="contacto.html" class="contacto__boton boton">Entre en contacto</a>
-            </section>
+                <form action="https://formsubmit.co/alumnoscontafray@gmail.com" method="POST">
+                   
+                    <div class="contenedor-form">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Nombre Completo *" >
+                       <label for="email">Email</label>
+                        <input type="email"  name="email" placeholder="Dirección de Email">
+                        <label for="tema">Tema</label>
+                        <input type="text" placeholder="Tema..." name="tema">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu Mensaje..."
+                            ></textarea>
+                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    <button type="submit">Send</button>
+               </form>
+              <a href="contacto.html" class="contacto__boton boton">Entre en contacto</a>
+            </section>-->
             <section class="institucional container">
                 <h2 class="institucional__titulo">Institucional</h2>
                 <div class="institucional__contenido">
@@ -156,6 +175,36 @@
                     <video src="img/videopresentacion.mp4" class="institucional__video" controls></video>
                 </div>
             </section>
+            <section id="contacto">
+                <h3 class="titulo-seccion">CONTACTO</h3>
+                <div class="contenedor-form">
+                    <form action="https://formsubmit.co/alumnoscontafray@gmail.com" method="POST">
+                        <div class="fila mitad">
+                          
+                            <input type="text" name= "name" placeholder="Nombre Completo *" class="input-mitad">
+                           
+                            <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad">
+                        </div>
+                        <div class="fila">
+                            <label for="tema"></label>
+                            <input type="text" name="tema" placeholder="Tema..." class="input-full">
+                        </div>
+                        <div class="fila">
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                                class="input-full"></textarea>
+                        </div>
+        
+                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                        <script>
+                            alert("Su mensaje se envio con éxito");
+                        </script>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </section>
+        
+           
             <footer class="footer container">
                 <img src="img/logo-blanco.png" alt="Logo de casa del Block" class="footer__logo">
                 <ul class="footer__social">
